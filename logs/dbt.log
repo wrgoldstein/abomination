@@ -1,0 +1,31 @@
+[0m14:03:37.006886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10526d1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10527ffd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10527f250>]}
+
+
+============================== 14:03:37.009750 | f419ada0-624a-4e0d-956f-cd46c346245b ==============================
+[0m14:03:37.009750 [info ] [MainThread]: Running with dbt=1.7.9
+[0m14:03:37.010134 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/williamgoldstein/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m14:03:37.010481 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/williamgoldstein/.dbt')}
+[0m14:03:37.010682 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m14:03:41.118902 [debug] [MainThread]: Starter project path: /Users/williamgoldstein/3.11/lib/python3.11/site-packages/dbt/include/starter_project
+[0m14:03:41.130301 [info ] [MainThread]: 
+Your new dbt project "abomination" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:03:41.130995 [info ] [MainThread]: Setting up your profile.
+[0m14:04:08.256372 [info ] [MainThread]: Profile abomination written to /Users/williamgoldstein/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:04:08.259307 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 31.26295, "process_user_time": 0.905108, "process_kernel_time": 0.128888, "process_mem_max_rss": "107790336", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:04:08.260206 [debug] [MainThread]: Command `dbt init` succeeded at 14:04:08.260000 after 31.26 seconds
+[0m14:04:08.260788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10526d1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100cee790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100cec110>]}
+[0m14:04:08.261371 [debug] [MainThread]: Flushing usage events
