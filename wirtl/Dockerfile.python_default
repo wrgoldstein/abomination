@@ -1,0 +1,3 @@
+FROM python
+COPY entrypoint.py entrypoint.py
+CMD python run entrypoint.py
