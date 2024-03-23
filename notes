@@ -1,0 +1,18 @@
+This is where the materialization macro is called (for any language):
+https://github.com/dbt-labs/dbt-core/blob/main/core/dbt/task/run.py#L289
+
+FAL is the closest competitor in this space, here's their python adapter approach:
+https://github.com/fal-ai/dbt-fal/blob/main/projects/adapter/src/dbt/adapters/fal/wrappers.py#L62
+
+
+This is Snowflake's table materialization, including for python
+https://github.com/dbt-labs/dbt-snowflake/blob/main/dbt/include/snowflake/macros/materializations/table.sql
+
+
+
+Snowflake will eventually make environment support easier, probably. So.. we should think about a future where Twirl actually enables running Snowflake python... is that defensible? Whats special about Twirl then?
+
+
+is it insane to not use dbt materialiations? they're like hundreds of lines of code and i feel like it has to do.. something..? and exactly matching it will be hard.
+
+actually dockerfiles as standalone jobs are hard here... dbt won't parse them so we have to inject them into an already baked manifest. nvm thats easy just hacky.
