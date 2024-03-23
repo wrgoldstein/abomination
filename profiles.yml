@@ -1,0 +1,12 @@
+abomination:
+  outputs:
+    dev:
+      dbname: jaffle_shop
+      host: localhost
+      pass: postgres
+      port: 5432
+      schema: dbt_wrgoldstein
+      threads: 1
+      type: postgres
+      user: postgres
+  target: dev
